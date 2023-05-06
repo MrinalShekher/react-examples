@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import TopNav from './components/TopNav';
+import Body from './components/Body';
+import { useState } from 'react';
 function App() {
+  let [current_panel,setCurrentPanel] = useState(0);
+
+  let choosePanel=(value)=>{
+    setCurrentPanel(value)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopNav 
+        choosePanel={choosePanel}
+      />
+      <Body current_panel={current_panel}/>
     </div>
   );
 }

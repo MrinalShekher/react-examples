@@ -1,0 +1,13 @@
+.dropdown{
+    background-color: #ffffff;
+    width:200px;
+}
+
+.list-item{
+    text-align: start;
+    border-bottom: 1px solid;
+}
+
+p{
+    color:#ffffff;
+}
