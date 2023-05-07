@@ -1,6 +1,10 @@
 .dropdown{
+    margin-top: 5px;
     background-color: #ffffff;
-    width:200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow-y: auto;
+    height: 150px;
 }
 
 .list-item{
@@ -10,4 +14,17 @@
 
 p{
     color:#ffffff;
+}
+.multiselect{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:200px;
+}
+
+.multiselect-input{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
 }

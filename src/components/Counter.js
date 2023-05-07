@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 function Counter() {
     let [count,setCount] = useState(0)
     return (
-        <div>
+        <div className='text-white'>
             <p>Counter</p>
-            <button onClick={()=>{setCount(count-1)}}>-</button>  {count}  <button onClick={()=>{setCount(count+1)}}>+</button>
+            <button className='border-0 rounded' onClick={()=>{setCount(count-1)}}>-</button>  {count}  <button className='border-0 rounded' onClick={()=>{setCount(count+1)}}>+</button>
         </div>
     )
 }
